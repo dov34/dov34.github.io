@@ -1,0 +1,2289 @@
+@charset "utf-8";
+
+/* CSS Документ */
+@import "../css/jquery-ui.min.css";
+@import "../css/font-awesome.min.css";
+@import "../css/font-awesome-animation.min.css";
+@import "../css/flaticon.css";
+@import "../css/animate.css";
+@import "../css/bootsnav.css";
+@import "../css/fullcalendar.css";
+@import "../css/hover.css";
+@import "../css/fancyBox.css";
+@import "../css/jquery.flickr.css";
+@import "../css/owl.css";
+@import "../css/isotop.css";
+@import "../css/magnific-popup.css";
+@import "../css/flipclock.css";
+@import "../css/timecounter.css";
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,400);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300i,400,500,700);
+
+/* ========== Содержание ========== */
+body {
+  background-attachment: fixed;
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  max-width: 100%;
+  overflow-x: hidden !important;
+}
+img {
+  max-width: 100%;
+}
+p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+}
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+iframe {
+  border: none;
+  width: 100%;
+}
+a {
+  color: #333333;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: #0074FF;
+  text-decoration: none;
+}
+a img {
+  border: none;
+}
+iframe {
+  border: none;
+}
+/* ========== РАЗМЕР ШРИФТА ЗАГОЛОВКОВ ========== */ 
+h2,h3,h4,h5,h6  {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.42857143;
+  color: rgb(20, 20, 20);
+}
+h2 {
+  font-size: 30px;
+  font-family: 'Ubuntu', sans-serif;
+}
+h3 {
+  font-size: 20px;
+}
+h4 {
+  font-size: 16px;
+}
+h5 {
+  font-size: 14px;
+}
+.img-whp {
+  width: 100% !important;
+}
+.text-thm1 {
+  color: #004DFF !important;
+}
+.text-thm2 {
+  color: #f95b5b !important;
+}
+.ulockd-btn-thm {
+  border-radius: 0px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.ulockd-btn-thm {
+  background-color: #004DFF;
+  border-color: #004DFF;
+  color: #fff;
+  padding: 10px 35px;
+}
+.ulockd-btn-thm:hover,
+.ulockd-btn-thm:active,
+.ulockd-btn-thm:focus {
+  background-color: #0074FF;
+  border-color: #0074FF;
+  color: #fff;
+}
+/* Стиль Две Кнопки */
+.ulockd-btn-thm2 {
+  border-radius: 0px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.ulockd-btn-thm2 {
+  background-color: #f95b5b;
+  border-color: #f95b5b;
+  color: #fff;
+}
+.ulockd-btn-thm2:hover,
+.ulockd-btn-thm2:active,
+.ulockd-btn-thm2:focus {
+  background-color: #0074FF;
+  border-color: #0074FF;
+  color: #fff;
+}
+
+.ulockd-btn-styledark {
+  background-color: #0074FF;
+  border-color: #0074FF;
+  color: #fff;
+  border-radius: 0px;
+  padding: 10px 35px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.ulockd-btn-styledark:hover,
+.ulockd-btn-styledark:active,
+.ulockd-btn-styledark:focus {
+  background-color: #f95b5b;
+  border-color: #0074FF;
+  color: #fff;  
+}
+.btn-default {
+  font-size: 14px;
+}
+/* ========== раздел ========== */
+section {
+  position: relative;
+}
+
+/* ========== ПРОКРУТКА ДО ВЕРХА ========== */
+.scrollToTop {
+  background-color: #2f00ff;
+  border: 2px solid #fff;
+  bottom: 2%;
+  color: #ffffff;
+  display: none;
+  font-size: 20px;
+  padding: 3px 10px;
+  position: fixed;
+  right: 2%;
+  text-align: center;
+  z-index: 99999;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.scrollToTop:hover {
+  color: #ffffff;
+  background-color: #0074FF;
+}
+
+/* ========== Предварительный загрузчик ========== */
+.preloader {
+  background-color:#ffffff;
+  background-image:url(../images/preloader.gif);
+  background-position:center center;
+  background-repeat:no-repeat;
+  height:100%;
+  left:0px;
+  position:fixed;
+  top:0px;
+  width:100%;
+  z-index:999999;
+}
+.m_90 {
+  margin-top: 0px;
+}
+.m_925 {
+  margin-top: 25px !important;
+}
+/* ========== ВЕРХНИЙ КОЛЛЕКТОР ========== */
+  .ulockd-header-topped {
+    background: rgb(174, 192, 214) none repeat scroll 0 0;
+  }  
+  .ulockd-welcm-ht-two {
+    color: #fff;
+  }
+  .ulockd-header-topped-two {
+    background: #444 none repeat scroll 0 0;
+    padding-bottom: 5px;
+    padding-top: 15px;
+  }
+  .ulockd-header-topped-two span{
+    color: #fff;
+    font-weight: 400;
+  }
+  .ulockd-htpmz{
+    padding: 0;
+  }
+  .ulockd-welcm-ht {
+    position: relative;
+  }
+  .ulockd-welcntxt {
+    color: #fff;
+    margin-top: 15px;
+    text-transform: capitalize;
+  }
+  .ulockd-social-linked{
+    margin-top: 15px;
+    position: relative;
+  }
+  .ulockd-social-linked li {
+    padding: 0;
+  }
+  .ulockd-social-linked a {
+    color: #fff;
+    font-size: 14px;
+    padding: 3px 9px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  .ulockd-social-linked a:hover {
+    background: #004DFF;
+  }
+  /* социальная связь два */
+  .ulockd-social-linked-two{
+    position: relative;
+    margin-top: 3px;
+  }
+  .ulockd-social-linked-two li {
+    padding: 0;
+  }
+  .ulockd-social-linked-two a {
+    border:1px solid;
+    color: #fff;
+    font-size: 14px;
+    padding: 3px 9px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  .ulockd-social-linked-two a:hover {
+    background: #fb4848;
+  }
+  .ulockd-header-middle{
+    padding-top: 35px;
+    padding-bottom: 20px;
+  }
+  .ulockd-ohour-info .ulockd-icon {
+    border: 2px solid #004DFF;
+    color: #004DFF;
+    float: left;
+    font-size: 26px;
+    margin-right: 16px;
+    padding: 3px 10px;
+  }
+  .ulockd-contact-info .ulockd-icon{
+    border: 2px solid #004DFF;
+    color: #004DFF;
+    float: right;
+    font-size: 26px;
+    margin-right: 16px;
+    padding: 3px 10px;
+  }
+  .ulockd-contact-info .ulockd-info {
+    padding-right: 25%;
+  }
+  .ulockd-contact-info .ulockd-info > h3,
+  .ulockd-ohour-info .ulockd-info > h3 {
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 0;
+    margin-top: 12px;
+  }
+  .ulockd-cell,
+  .ulockd-addrss {
+    color: #555;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .header-nav .main-header-nav.navbar-scrolltofixed{
+    background: #004DFF;
+  }
+  .main-header-nav{
+    position: relative;
+  }
+  .ulockd-factr-main-logo-two {
+    margin-top: 8px;
+  }
+  /* стиль второй */
+  .main-header-nav-two {
+    background-color: #fb4848;
+  }
+/*=========== НОВЫЙ ЗАГОЛОВОК ==========*/
+  nav.navbar.bootsnav.ulockd-menu-style-one{
+    border: none;
+    position: relative;
+  }
+  nav.navbar.bootsnav.ulockd-menu-style-one ul.nav > li > a{
+    padding: 30px 15px;
+  }
+  nav.navbar.bootsnav.light-red ul.nav > li > a{
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;    
+  }
+  nav.navbar.bootsnav.light-red ul.nav > li > a{
+    color: #fff;
+  }
+  nav.navbar.bootsnav.ulockd-menu-style-two li.dropdown ul.dropdown-menu > li > a {
+    color: #fff;
+  }
+  .navbar.bootsnav .nav.navbar-nav .dropdown li a {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;    
+  }
+
+  nav.navbar.bootsnav.light-red ul.nav > li > a.active,  
+  nav.navbar.bootsnav.light-red ul.nav > li > a:hover,
+  nav.navbar.bootsnav.light-red li.dropdown ul.dropdown-menu > li > a:hover,  
+  .attr-nav > ul > li > a {
+    color: rgb(1, 13, 41);
+  }
+  nav.navbar.bootsnav.light-red li.dropdown ul.dropdown-menu > li > a {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+  nav.navbar.bootsnav.light-red li.dropdown ul.dropdown-menu > li > a:hover{
+    padding-left: 20px;
+  }
+  nav.navbar.bootsnav.ulockd-menu-style-two li.dropdown ul.dropdown-menu > li > a{
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  nav.navbar.bootsnav.ulockd-menu-style-two li.dropdown ul.dropdown-menu > li > a:hover{
+    padding-right: 20px;
+  }
+  nav.navbar.bootsnav ul.nav > li > a{
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;    
+  }
+  .ulockd-menu-style-one #navbar-menu {
+    background-color: #004DFF;
+  }
+  nav.navbar.bootsnav.ulockd-menu-style-two {
+    border: none;
+  }
+  nav.navbar.bootsnav.ulockd-menu-style-two #navbar-menu {
+    background-color: #fb4848;
+  }
+  nav.navbar.bootsnav ul.nav > li > a.active,  
+  nav.navbar.bootsnav ul.nav > li > a:hover,
+  nav.navbar.bootsnav li.dropdown ul.dropdown-menu > li > a:hover {
+    color: #111;
+  }
+  nav.navbar.bootsnav li.dropdown ul.dropdown-menu {
+    border: none;
+  }
+  nav.navbar.bootsnav.ulockd-menu-style-one li.dropdown ul.dropdown-menu{
+    background-color: #004DFF;
+  }
+  nav.navbar.bootsnav.ulockd-menu-style-one ul.dropdown-menu.megamenu-content h5.title {
+    color: #fff;
+  }
+  .dropdown-menu.cart-list a {
+    color: #fff;
+  }
+  .total a.btn.btn-default.btn-cart{
+    color: #313131 !important;
+  }
+  .dropdown-menu.cart-list p,
+  .dropdown-menu.cart-list p .price{
+    color: #fff;
+  }
+  nav.navbar.bootsnav.ulockd-menu-style-one ul.dropdown-menu.megamenu-content .content ul.menu-col li a {
+    color: #fff;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+  }
+  nav.navbar.bootsnav.ulockd-menu-style-one ul.dropdown-menu.megamenu-content .content ul.menu-col li:hover a{
+    color: #fb4848;
+    padding-left: 10px;
+  }
+  nav.navbar.bootsnav.ulockd-menu-style-two li.dropdown ul.dropdown-menu {
+    background-color: #FB4848;
+  }
+  .attr-nav > ul > li > a span.badge{
+    background-color: #fb4848;
+    padding: 3px 0 0;
+  }
+  .navbar-brand{
+    padding: 3px;
+  }
+  .attr-nav > ul > li > a{
+    color: #fff;
+  }
+  .ulockd-quote-btn.ulockd-l2 {
+    margin-right: 5%;
+  }
+
+/*=========== ВНУТРЕННИЙ КОЛЛЕКТОР ==========*/
+  .ulockd-home-two {
+    background-color: #fb4848;
+  }
+  .ulockd-quote-btn{
+    margin-right: 12%;
+    position: relative;
+  }
+  /* Стиль второй */
+  .ulockd-quote-btn-two a {
+    font-size: 14px;
+    margin-top: 10px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+  }
+/*=========== Главный Слайдер ==========*/ 
+  .ulockd-main-slider {
+    position: relative;
+  }
+  .ulockd-main-slider .item::before {
+    background-color: rgba(0, 0, 0, 0.65);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  .ulockd-main-slider .caption {
+    padding: 12% 21%;
+    position: absolute;
+  }
+  .ulockd-main-slider .ulockd-text-one {
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 48px;
+  }
+  .ulockd-main-slider .ulockd-text-two {
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 70px;
+    font-weight: bold;
+    line-height: 70px;
+  }
+  .ulockd-main-slider .ulockd-text-three,
+  .ulockd-main-slider .ulockd-text-three {
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 20px;
+  }
+  .ulockd-main-slider .owl-next {
+    background: transparent none repeat scroll 0 0 !important;
+    border: 2px solid #004DFF;
+    position: absolute;
+    right: 10px;
+    text-align: center;
+    top: 40%;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+  }
+  .ulockd-main-slider .owl-next:hover,
+  .ulockd-main-slider .owl-prev:hover{
+  background-color: #004DFF !important;
+  }
+  .ulockd-main-slider .owl-next i,
+  .ulockd-main-slider .owl-prev i {
+    font-family: FontAwesome;
+    font-size: 24px;
+    font-style: normal;
+    padding: 4px;
+  }
+  .ulockd-main-slider .owl-prev{
+    background: transparent none repeat scroll 0 0 !important;
+    border: 2px solid #004DFF;
+    position: absolute;
+    left: 10px;
+    text-align: center;
+    top: 40%;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+  }
+  .ulockd-home-btn {
+    border-radius: 30px;
+  }
+/* Главный Конец Слайдера */
+
+/* Основной Стиль Слайдера 2 */
+  .ulockd-main-slider-style2 {
+    position: relative;
+  }
+  .ulockd-main-slider-style2 .item::before {
+    background-color: rgba(0, 0, 0, 0.65);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  .ulockd-main-slider-style2 .caption {
+    padding: 12% 21%;
+    position: absolute;
+  }
+  .ulockd-main-slider-style2 .ulockd-text-one {
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 48px;
+  }
+  .ulockd-main-slider-style2 .ulockd-text-two {
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 70px;
+    font-weight: bold;
+    line-height: 70px;
+  }
+  .ulockd-main-slider-style2 .ulockd-text-three {
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 20px;
+  }
+  .ulockd-main-slider-style2 .owl-next {
+    background: transparent none repeat scroll 0 0 !important;
+    border: 2px solid #f95b5b;
+    position: absolute;
+    right: 10px;
+    text-align: center;
+    top: 40%;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+  }
+  .ulockd-main-slider-style2 .owl-next:hover,  
+  .ulockd-main-slider-style2 .owl-prev:hover{
+  background-color: #f95b5b !important;
+  }
+  .ulockd-main-slider-style2 .owl-next i,
+  .ulockd-main-slider-style2 .owl-prev i {
+    font-size: 24px;
+    font-style: normal;
+    font-family: FontAwesome;
+    padding: 4px;
+  }
+  .ulockd-main-slider-style2 .owl-prev {
+    background: transparent none repeat scroll 0 0 !important;
+    border: 2px solid #f95b5b;
+    position: absolute;
+    left: 10px;
+    text-align: center;
+    top: 40%;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+  }
+  .ulockd-home-btn {
+    border-radius: 30px;
+  }  
+/* Главный Конец Слайдера */
+
+/*=========== ПЕРВАЯ СЕКЦИЯ ОБСЛУЖИВАНИЯ ==========*/ 
+  .ulockd-service-one {
+    background-image: url("../images/pattern/p3.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+  .ulockd-service-one::before {
+    background-color: rgba(255, 255, 255, 0.8);
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .ulockd-service-fstcol {
+    background-color: rgba(17, 17, 17, 0.9);
+    padding: 20px 15px;
+    position: relative;
+  }
+  .ulockd-service-fstcol:hover {
+    cursor: pointer;
+  }
+  .ulockd-service-fstcol:hover h3 {
+    color: #004DFF;
+  }
+  .ulockd-service-fstcol {
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+  }
+  .ulockd-service-fstcol::before {
+    border-bottom: 80px solid #004DFF;
+    border-right: 80px solid transparent;
+    bottom: 0;
+    content: "";
+    display: inline-table;
+    right: 0;
+    position: absolute;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+  }
+  .ulockd-service-fstcol .ulockd-srvc-icon {
+    border: 3px solid #fff;
+    color: #fff;
+    display: inline;
+    font-size: 40px;
+    padding: 0px 15px;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+  }
+  .ulockd-service-fstcol h3 {
+    color: #fff;
+    margin-top: 25px;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+  }
+  .ulockd-service-fstcol p{    
+    color: #cccccc;
+    font-family: 'Poppins', sans-serif;
+  }
+/*=========== ВО ПЕРВЫХ О РАЗДЕЛЕ ==========*/
+  .ulockd-about-one{
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .ulockd-about-thumb {
+    position: relative;
+  }
+  .ulockd-about-thumb-ttl {
+    background: white none repeat scroll 0 0;
+    left: -33%;
+    padding: 5px 8px;
+    position: absolute;
+    top: 148px;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+  }
+  .ulockd-about-ondetials {
+    background-color: #282828;
+    color: #fff;
+    padding: 30px 60px;
+    position: relative;
+  }
+  .ulockd-abtonspc {
+    padding: 0;
+  }
+  .ulockd-about-ondetials > h2 {
+    color: #fff;
+  }
+  .ulockd-abt-ondtls-para {
+    margin-bottom: 25px;
+    margin-top: 20px;
+  }
+  .ulockd-fstabt-list{
+    margin-top: 20px;
+  }
+  .ulockd-fstabt-list > li {
+    font-family: "Poppins",sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    list-style-image: url("../images/resource/list-thumb.png");
+    margin-left: 40px;
+    padding-left: 5px;
+  }
+/*=========== ПЕРВЫЙ ПОЛНОМЕТРАЖНЫЙ ПРОЕКТ ОДИН ==========*/
+  .ulockd-feature-phoject-one {
+    background-color: #f1f1f1;
+    padding-top: 90px;
+    padding-bottom: 100px;
+    position: relative;
+  }
+  .ulockd-fproject-title {
+    position: relative;
+    padding-bottom: 60px;
+  }
+  .ulockd-fproject-title h2 {
+    color: #111;
+    margin-top: 0;
+  }
+  .ulockd-fprjct-column{
+    background-color: #505050;
+    padding-bottom: 15px;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+  .ulockd-fprjct-column:hover {
+    background-color: #f95b5b;    
+  }
+  .ulockd-fprjct-column .ulockd-fprjct-thumb {
+    position: relative;
+    overflow: hidden;
+  }
+  .ulockd-fprjct-overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+    bottom: 10px;
+    left: 10px;
+    margin: auto;
+    position: absolute;
+    right: 10px;
+    text-align: center;
+    top: 10px;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -o-transform: scale(0);
+    -ms-transform: scale(0);
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    -ms-transition: all 0.4s ease-in-out 0s;
+    -o-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+  }
+  .ulockd-fprjct-thumb:hover .ulockd-fprjct-overlay {
+    transform: scale(1); 
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+  }
+  .ulockd-fprjct-ovrly-icon {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 45%;
+  }
+  .ulockd-fprjct-overlay::before {
+    border-top: 80px solid #f95b5b;
+    border-left: 80px solid transparent;
+    content: "";
+    display: inline-table;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+  }
+  .ulockd-fprjct-overlay::after {
+    border-right: 80px solid transparent;
+    border-top: 80px solid #f95b5b;
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+  }
+  .ulockd-fprjct-ovrly-icon a {
+    border: 1px solid #f95b5b;
+    color: #f95b5b;
+    font-size: 11px;
+    font-weight: 400;
+    padding: 5px 10px;
+    text-transform: uppercase;
+  }
+  .ulockd-fprjct-contnt > h3, .ulockd-fprjct-contnt > p{
+    color: #fff;
+  }
+  .ulockd-fproject-title .ulockd-fprjct-hdr-icon {
+    font-size: 80px;
+    left: 0;
+    margin: 0 auto;
+    opacity: 0.08;
+    position: absolute;
+    right: 0;
+    top: -45px;
+  }
+
+/*=========== ПЕРВАЯ УСЛУГА ==========*/
+  .ulockd-service-two {
+    background-image: url(../images/pattern/p3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 110px;
+    padding-bottom: 100px;
+  }
+  .ulockd-service-two::before {
+    background-color: rgba(255, 255, 255, 0.95);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  .ulockd-srvc-title {
+    position: relative;
+    padding-bottom: 70px;
+  }
+  .ulockd-srvc-title h2 {
+    color: #111;
+    margin-top: 0;
+  }
+  .ulockd-srv-icon {
+    background-color: #004DFF;
+    padding: 10px;
+  }
+  .ulockd-srvc-column{
+    margin-bottom: 45px;
+  }
+  .ulockd-srvc-column .ulockd-srv-icon {
+    color: #fff;
+    float: left;
+    font-size: 36px;
+    margin-top: 9px;
+    padding: 8px 13px;
+    position: relative;
+  }
+  .ulockd-srvc-column:hover {
+    cursor: pointer;
+  }
+  .ulockd-srvc-column:hover .ulockd-srv-cntnt-details h3{
+    color: #004DFF;
+  }
+  .ulockd-srv-cntnt-details {
+    padding-left: 21%;
+    padding-top: 0;
+  }
+  .ulockd-srv-cntnt-details h3 {
+    color: #333;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 22px;
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    -moz-transition: all 0.2s ease-in-out 0s;
+    -ms-transition: all 0.2s ease-in-out 0s;
+    -o-transition: all 0.2s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
+  }
+  .ulockd-srv-cntnt-details > p {
+    color: #333;
+  }
+  .ulockd-fproject-title .ulockd-fpmain-icon{    
+    font-size: 415px;
+    opacity: 0.05;
+    position: absolute;
+    right: -100%;
+    top: -70%;
+  }
+/*=========== ПЕРВАЯ УСЛУГА ==========*/
+  .ulockd-ap-service-two {
+    background-image: url(../images/resource/feature-projectbg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 110px;
+    padding-bottom: 100px;
+  }
+  .ulockd-ap-service-two::before {
+    background-color: rgba(72, 99, 251, 0.8);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }  
+  .ulockd-ap-srvc-title {
+    position: relative;
+    padding-bottom: 70px;
+  }
+  .ulockd-ap-srvc-title h2 {
+    color: #111;
+    margin-top: 0;
+  }
+  .ulockd-ap-srvc-title h2 span {
+    color: #fff;
+  }
+  .ulockd-ap-srvc-title .ulockd-ap-srvc-hdr-icon {
+    color: #fff;
+    font-size: 80px;
+    left: 0;
+    margin: 0 auto;
+    opacity: 0.2;
+    position: absolute;
+    right: 0;
+    top: -45px;
+  }
+  .ulockd-ap-srv-icon {
+    background-color: #393939;
+    padding: 10px;
+  }
+  .ulockd-ap-srvc-column{
+    margin-bottom: 45px;
+    position: relative;
+  }
+  .ulockd-ap-srvc-column .ulockd-ap-srv-icon {
+    color: #fff;
+    float: left;
+    font-size: 36px;
+    margin-top: 9px;
+    position: relative;
+  }  
+  .ulockd-ap-srv-icon::before {
+    background-color: #393939;
+    border-left: 4px solid #fff;
+    border-right: 10px solid #393939;
+    content: "";
+    height: 100%;
+    left: -33%;
+    position: absolute;
+    top: 0;
+    transform: skewX(9deg);
+    -webkit-transform: skewX(9deg);
+    -moz-transform: skewX(9deg);
+    -o-transform: skewX(9deg);
+    -ms-transform: skewX(9deg);
+    width: 44%;
+  }
+  .ulockd-ap-srv-cntnt-details {
+    padding-left: 21%;
+    padding-top: 0;
+  }
+  .ulockd-ap-srv-cntnt-details h3 {
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 22px;
+  }
+  .ulockd-ap-srv-cntnt-details > p {
+    color: #fff;
+  }
+  /* РАЗДЕЛ ЧАСТО ЗАДАВАЕМЫХ ВОПРОСОВ О СТРАНИЦЕ */
+  .ulockd-ap-faq {
+    padding-bottom: 120px;
+    padding-top: 120px;
+  }
+  .ulockd-ap-faq-title.clearfix > h2 {
+    margin-bottom: 25px;
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .ulockd-faq-content .panel-default > .panel-heading:hover a {
+    color: rgb(0, 4, 255);
+  }
+
+  .ulockd-faq-content .panel-default {
+    border: none;
+  }
+  .ulockd-faq-content .panel {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  .ulockd-faq-box .panel .panel-title a .icon-1 {
+    display: inline-block;
+  }
+  .ulockd-faq-box .panel .panel-title a.collapsed .icon-1 {
+    display: none;
+  }
+  .ulockd-faq-box .panel .panel-title a .icon-2 {
+    display: none;
+  }
+  .ulockd-faq-box .panel .panel-title a.collapsed .icon-2 {
+    display: inline-block;
+  }
+  .ulockd-faq-box .panel-body {
+    background: #f1f1f1 none repeat scroll 0 0;
+    padding: 20px 25px;
+  }
+  .ulockd-faq-thumb{
+    margin-top: 11px;
+  }
+
+  /* Внутренние Страницы Проекта */
+  .ulockd-project-ip-one{
+    padding-bottom: 120px;
+    padding-top: 120px;
+  }
+  .ulockd-project-ip-one .ulockd-fprjct-column {
+    margin-bottom: 50px;
+  }
+
+  /* Последние Новости Внутренние Страницы */
+  .ulockd-ip-latest-news{
+    padding-bottom: 120px;
+    padding-top: 120px;
+  }
+  .ulockd-ip-latest-news .ulockd-ext-spc{
+    margin-bottom: 50px;
+  }
+
+  /* Последние Новости Внутренние Страницы */
+  .ulockd-ip-project-details{
+    padding-bottom: 120px;
+    padding-top: 100px;
+  }
+  .ulockd-pd-content > h3 {
+    color: #333;
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
+  .ulockd-m_910 {
+    margin-top: 10px;
+  }
+  .ulockd-ip-project-details .list-number > li {
+    font-size: 14px;
+    line-height: 28px;
+    list-style-type: number;
+  }
+  .ulockd-ip-project-details .ulockd-list-details{
+    padding-left: 40px;
+    padding-top: 55px;
+  }
+  .ulockd-ip-project-details .ulockd-list-details {
+    color: #878787;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    padding-left: 40px;
+    padding-top: 55px;
+  }
+  .ulockd-ap-backgrndclr{
+    background-color: #f5f5f5;
+  }
+  .ulockd-all-service {
+    margin-top: 15px;
+  }
+  .ulockd-all-service a {
+    padding: 10px 25px;
+  }
+  .ulockd-all-service a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 34px;
+  }
+  .ulockd-all-service a.active {
+    background-color: #fb4848;
+    border-color:  #fb4848;
+  }
+  .ulockd-inr-brochure {
+    background-color: #f5f5f5;
+    margin-top: 35px;
+    padding: 10px 30px;
+  }
+  .ulockd-inr-brochure > p {
+    margin-bottom: 22px;
+  }
+  .ulockd-inr-brochure ul li a {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  .ulockd-pad-zero{
+    padding: 0;
+  }
+  /* СТРАНИЦА КОНТАКТОВ */
+  .ulockd-contact-page {
+    padding-bottom: 120px;
+    padding-top: 120px;
+  }
+  .ulockd-contact-form .ulockd-form-fg {
+    border: 1px solid #e9e9e9;
+    border-radius: 0;
+    box-shadow: none;
+    color: #a2a2a2;
+    font-weight: 300;
+    height: 40px;
+    margin-bottom: 20px;
+  }
+  .ulockd-contact-form .ulockd-form-tb {
+    border: 1px solid #e9e9e9;
+    border-radius: 0;
+    box-shadow: none;
+    color: #a2a2a2;
+    font-weight: 300;
+  }
+  .ulockd-contact-details {
+    margin-bottom: 130px;
+    margin-top: 10px;
+  }
+  .ulockd-contact-details > h3 {
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+  }
+  .ulockd-contact-details .ulockd-contact-place > li {
+    background-color: #004DFF;
+    color: #fff;
+    font-size: 45px;
+    padding: 25px 39px;
+  }
+  .ulockd-contact-details .ulockd-contact-place{
+    margin-bottom: 45px;
+  }
+  .ulockd-contact-form.ulockd-style-two {
+    background: white none repeat scroll 0 0;
+    box-shadow: 1px 3px 3px 1px #d3d3d3;
+    -webkit-box-shadow: 1px 3px 3px 1px #d3d3d3;
+    -moz-box-shadow: 1px 3px 3px 1px #d3d3d3;
+    -o-box-shadow: 1px 3px 3px 1px #d3d3d3;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 50px 85px;
+  }
+  .ulockd-google-map.ulockd-style-two {
+    margin-bottom: -9%;
+    position: relative;
+    z-index: -1;
+  }
+  .form-group.ulockd-contact-btn:hover button{
+    background-color: #FB4848;
+    color: #fff;
+  }
+
+  /* Страницы Подробностей Блога */
+  .ulockd-inr-testimonials {
+    padding: 10px 25px;
+  }
+  .ulockd-inr-testimonials p {
+    color: #313131;
+  }
+  .ulockd-inr-testimonials h3{
+    color: #333;
+    margin-bottom: 0;
+  }
+  .ulockd-tm-name {
+    margin-bottom: 0;
+  }
+  .ulockd-lp{
+    padding-top: 20px;
+  }
+  .ulockd-tag-list-title {
+    margin-top: 50px;
+  }
+  .ulockd-tag-list-title > h3 {
+    color: #333;
+    font-weight: 500;
+    line-height: 22px;
+    margin-bottom: 30px;
+  }
+  .ulockd-tag-list-details a {
+    border: 1px solid;
+    color: #313131;
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    line-height: 22px;
+    padding: 5px 8px;
+  }
+  .ulockd-bp-date {
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 30px;
+    margin-top: 25px;
+    padding-bottom: 5px;
+  }
+  .ulockd-bp-date-innner {
+    color: #939393;
+    font-family: "Montserrat",sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+  }
+  .ulockd-bp-date-innner span {
+    font-family: "Montserrat",sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+  }
+  .ulockd-bp-comment {
+    color: #949494;
+    font-family: "Montserrat",sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-top: 11px;
+  }
+  .ulockd-bpd-thumb {
+    margin-bottom: 50px;
+    margin-top: 40px;
+  }
+  .ulockd-latest-post {
+    margin-bottom: 30px;
+  }
+  /* ОТЗЫВ КАРУСЕЛЬНОЙ КОМПОНОВКИ 2 */
+  .owl-carousel .owl-item img{width: auto;}
+  /* ЗАПИСЬ В БЛОГЕ ОДИНОЧНАЯ */
+  .ulockd-bps-first,
+  .ulockd-bps-second {
+    margin-bottom: 50px;
+  }
+  .ulockd-bps-first .media-body > p {
+    margin-bottom: 0;
+  }
+  .ulockd-bps-first .media {
+    border-top: 1px solid #ededed;
+    padding: 30px 50px 30px 30px;
+  }
+  .ulockd-bps-first .media-object {
+    border: 1px solid #ededed;
+    margin-top: 8px;
+  }
+  .ulockd-bps-first .media-heading {
+    color: #6b6b6b;
+    font-size: 18px;
+    padding-right: 38px;
+  }
+  .ulockd-bps-first .media-heading span {
+    color: #a6a6a6;
+    font-size: 13px;
+    line-height: 22px;
+  }
+  .ulockd-bpost-slider .item{
+    margin: 15px;
+  }
+  .ulockd-bpost-slider .owl-controls{
+    margin-top: 20px;
+  }
+  .ulockd-bpost-slider .owl-controls .owl-prev,
+  .ulockd-bpost-slider .owl-controls .owl-next {
+    background-color: #313131;
+    font-size: 18px;
+    padding: 3px 8px;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+  .ulockd-bpost-slider .owl-controls .owl-prev:hover,
+  .ulockd-bpost-slider .owl-controls .owl-next:hover {
+    background-color: #f95b5b;
+  }
+
+  /* СТИЛИ ПОДАЧИ FLICKR */
+  .flickr-photo {
+    margin-top: 30px;
+  }
+  .flickr-photo > li {
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+  /* СООБЩЕНИЕ В БЛОГЕ ОДИН ВТОРОЙ ПОСТ*/
+  .ulockd-bps-second {
+    margin-left: 20%;
+    width: 80%;
+  }
+  .ulockd-bps-second .media-body > p {
+    margin-bottom: 0;
+  }
+  .ulockd-bps-second .media {
+    border-top: 1px solid #ededed;
+    padding: 30px 50px 30px 30px;
+  }
+  .ulockd-bps-second .media-object {
+    border: 1px solid #ededed;
+    margin-top: 8px;
+  }
+  .ulockd-bps-second .media-heading {
+    color: #6b6b6b;
+    font-size: 18px;
+    padding-right: 12px;
+  }
+  .ulockd-bps-second .media-heading span {
+    color: #a6a6a6;
+    font-size: 13px;
+    line-height: 22px;
+  }
+  .ulockd-bps-contact-form > h2 {
+    color: #111;
+  }
+  .ulockd-bps-contact-form .ulockd-form-bps {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color: transparent;
+    border-radius: 0;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    box-shadow: none;
+    color: #a2a2a2;
+    font-weight: 300;
+    height: 40px;
+    margin-bottom: 45px;
+    padding: 0;
+  }
+  .ulockd-bps-contact-form .ulockd-bps-textarea {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color: transparent;
+    border-radius: 0;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    box-shadow: none;
+    color: #a2a2a2;
+    font-weight: 300;
+    padding: 0;
+  }
+  .ulockd-m_940{
+    margin-top: 40px;
+  }
+/*=========== ВТОРАЯ УСЛУГА ==========*/
+  .ulockd-title-icon {
+    color: #fb4848;
+    font-size: 90px;
+    left: 0;
+    opacity: 0.4;
+    position: absolute;
+    right: 0;
+    top: -79px;
+    z-index: 0;
+  }
+  .ulockd-service-three {
+    background-color: #f8f8f8;
+    padding-bottom: 70px;
+    padding-top: 110px;
+  }
+  .ulockd-srvc-title-two {
+    position: relative;
+    padding-bottom: 70px;
+  }
+  .ulockd-srvc-title-two h2 {
+    color: #111;
+    font-family: "Poppins",sans-serif;
+    font-weight: bold;
+    margin-top: 0;
+    position: relative;
+  }
+  .ulockd-srv-icon-two {
+    padding: 10px;
+  }
+  .ulockd-srvc-column-two {
+    background: #fb4848 none repeat scroll 0 0;
+    margin-bottom: 45px;
+    overflow: hidden;
+    padding-bottom: 25px;
+    padding-top: 10px;
+    position: relative;
+  }
+  .ulockd-srvc-column-two::before {
+    color: #fff;
+    content: "0";
+    font-size: 160px;
+    left: -37px;
+    opacity: 0.2;
+    position: absolute;
+    top: -87px;
+  }
+  .ulockd-srvc-column-two .ulockd-srv-icon-two {
+    color: #fff;
+    font-size: 60px;
+    margin-top: 9px;
+    position: relative;
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    -moz-transition: all 0.2s ease-in-out 0s;
+    -ms-transition: all 0.2s ease-in-out 0s;
+    -o-transition: all 0.2s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
+  }
+  .ulockd-srv-icon-two{
+    padding-bottom: 0;
+  }
+  .ulockd-srv-cntnt-details-two {
+    padding-top: 0;
+  }
+  .ulockd-srv-cntnt-details-two h3 {
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 22px;
+    margin-top: 0;
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    -moz-transition: all 0.2s ease-in-out 0s;
+    -ms-transition: all 0.2s ease-in-out 0s;
+    -o-transition: all 0.2s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
+  }
+  .ulockd-srv-cntnt-details-two > p {
+    color: #818181;
+  }
+  .ulockd-fproject-title .ulockd-fpmain-icon{    
+    font-size: 415px;
+    opacity: 0.05;
+    position: absolute;
+    right: -100%;
+    top: -70%;
+  }
+
+/*=========== ПРИВЕТСТВУЕМ РАЗДЕЛ ==========*/
+  .ulockd-frst-divider {
+    overflow-x: hidden;
+    padding-bottom: 80px;
+    padding-top: 90px;
+    position: relative;
+  }
+  .ulockd-frst-divider::before {
+    background-color: #004DFF;
+    content: "";
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  .ulockd-dvidr-mttl {
+    color: #ffffff;
+    font-size: 34px;
+    margin-top: 0;
+  }
+  .ulockd-dvidr-sttl {
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+  .ulockd-dvidr-btn {
+    margin-top: 25px;
+  }
+  .ulockd-dvidr-btn a {
+    padding: 15px 60px;
+  }
+
+/*=========== СЕКЦИЯ ДЕЛИТЕЛЯ ==========*/
+  .ulockd-frst-divider-l2 {
+    padding-bottom: 80px;
+    padding-top: 90px;
+    overflow-x: hidden;
+  }
+  .ulockd-frst-divider-l2::before {
+    background-color: rgba(17, 17, 17, 0.7);
+    content: "";
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  .ulockd-frst-divider-l2::after {
+    background-color: rgba(251, 72, 72, 0.8);
+    content: "";
+    height: 100%;
+    position: absolute;
+    right: -16%;
+    top: 0;
+    transform: skewX(-39deg);
+    -webkit-transform: skewX(-39deg);
+    -moz-transform: skewX(-39deg);
+    -o-transform: skewX(-39deg);
+    -ms-transform: skewX(-39deg);
+    width: 45%;
+    z-index: 0;
+  }
+  .ulockd-dvidr-mttl-l2 {
+    color: #ffffff;
+    font-size: 34px;
+    margin-top: 0;
+  }
+  .ulockd-dvidr-sttl-l2 {
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+  .ulockd-dvidr-btn-l2 {
+    margin-top: -6%;
+  }
+  .ulockd-dvidr-btn-l2 a {
+    border-radius: 30px;
+    padding: 15px 60px;
+  }
+  .ulockd-dvidr-btn-l2 a {
+    border-radius: 30px;
+    box-shadow: 0 3px 0 1px #1e8355;
+    -webkit-box-shadow: 1px 3px 3px 1px #1e8355;
+    -moz-box-shadow: 1px 3px 3px 1px #1e8355;
+    -o-box-shadow: 1px 3px 3px 1px #1e8355;
+    padding: 15px 50px;
+  }
+  .ulockd-frst-divider::after {
+    background-color: rgba(0, 0, 0, 0.4);
+    content: "";
+    height: 100%;
+    right: -10%;
+    position: absolute;
+    top: 0;
+    transform: skewX(-45deg);
+    -webkit-transform: skewX(-45deg);
+    -moz-transform: skewX(-45deg);
+    -o-transform: skewX(-45deg);
+    -ms-transform: skewX(-45deg);
+    width: 45%;
+    z-index: -1;
+  }
+
+/*=========== НАШ ПОСЛЕДНИЙ РАЗДЕЛ РАБОТЫ ==========*/
+  .ulockd-our-ltst-work{
+    padding-bottom: 120px;
+    padding-top: 120px;
+  }
+  .ulockd-pmz {
+    margin: 0;
+    padding: 0;
+  }  
+  .ulockd-lwork-overlay::before {
+    border-bottom: 80px solid #f95b5b;
+    border-left: 80px solid transparent;
+    bottom: 0;
+    content: "";
+    display: inline-table;
+    left: 0;
+    position: absolute;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+  }
+  .ulockd-lwork-overlay::after {
+    border-right: 80px solid transparent;
+    border-top: 80px solid #f95b5b;
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+  }
+  .ulockd-lwork-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    bottom: 20px;
+    left: 20px;
+    margin: auto;
+    position: absolute;
+    right: 20px;
+    text-align: center;
+    top: 20px;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -o-transform: scale(0);
+    -ms-transform: scale(0);
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    -ms-transition: all 0.4s ease-in-out 0s;
+    -o-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+  }
+  .ulockd-lwork-thumb:hover .ulockd-lwork-overlay {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+  }
+  .ulockd-overlay-icon {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 50%;
+  }
+  .ulockd-overlay-icon a {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    font-size: 20px;
+    line-height: 20px;
+    margin-right: 7px;
+    padding: 4px 13px;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+  .ulockd-overlay-icon a:hover {
+    background-color: #f95b5b;
+  }
+  .ulockd-overlay-icon span {
+    color: #fafbfd;
+    font-size: 18px;
+  }
+  .ulockd-lwork-overlay > h3{    
+    color: #fff;
+    margin-top: 75px;
+  }
+
+/*=========== СЕКЦИЯ СЧЕТЧИКА FUNFACT ==========*/
+  .ulockd-ffact {
+    position: relative;
+  }
+  .ulockd-ffact span {
+    bottom: -55%;
+    color: #fff;
+    font-size: 80px;
+    left: 0;
+    opacity: 0.1;
+    position: absolute;
+    right: 0;
+  }
+  .ulockd-ffact > p {
+    color: #fff;
+    font-family: "Montserrat",sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+  .ulockd-ffact .timer {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    line-height: 24px;
+  }
+
+/*=========== О РАЗДЕЛЕ ==========*/
+  .ulockd-about-two {
+    background-color: #393939;
+    padding-bottom: 120px;
+    padding-top: 90px;
+    position: relative;
+  }  
+  .ulockd-abouttwo-details > h2 {
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+    margin-top: 0;
+  }
+  .ulockd-abouttwo-details p {
+    color: #eeeeee;    
+  }
+  .ulockd-abouttwo-details .ulockd-about-para {
+    font-weight: 300;
+    margin-bottom: 30px;
+  }
+  .ulockd-ffact-two {
+    position: relative;
+    margin-top: 25px;
+    z-index: 999;
+  }
+  .ulockd-ffact-two .ulockd-icon-let {
+    background-color: #FB4848;
+    border: 1px solid #fff;
+    color: #fff;
+    float: left;
+    font-size: 24px;
+    line-height: 24px;
+    margin-right: 30px;
+    padding: 16px 18px;
+  }
+  .ulockd-ffact-two > p {
+    color: #d6d6d6;
+    font-family: "Montserrat",sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+  .ulockd-ffact-two .timer {
+    color: #d6d6d6;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+  }
+
+/*=========== О нижнем разделе Видео ==========*/
+  .ulockd-fector-about-video{
+    margin-top: 12px;
+  }
+  .ulockd-afv-thumb {
+    position: relative;
+  }
+  .ulockd-afv-overlay {
+    background-color: rgba(17, 17, 17, 0.6);
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+  }
+  .ulockd-afv-play-icon {
+    color: #fff;
+    font-size: 72px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 25%;
+  }
+
+/*=========== ИЗОТОПНЫЙ ФИЛЬТР ==========*/
+  .masonry-filter {
+    margin-bottom: 50px;
+  }
+  .masonry-filter > li {
+    padding-right: 0;
+  }
+  .masonry-filter a {
+    border: 1px solid #eeeeee;
+    color: #555555;
+    display: inline-block;
+    float: none;
+    line-height: 40px;
+    margin-bottom: 10px;
+    margin-right: -10px;
+    outline: medium none;
+    text-transform: uppercase;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+  .masonry-filter a.active,
+  .masonry-filter a:active,
+  .masonry-filter a:hover,
+  .masonry-filter a:focus {
+    background-color: #fb4848;
+    color: #ffffff;
+  }
+  .masonry-filter a > span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    padding: 16px 15px;
+  }
+  /*=========== ГАЛЕРЕЯ ИЗОТОПОВ ==========*/
+
+  .masonry-gallery .isotope-item {
+    width: 25%;
+  }
+  .masonry-gallery.grid-three-item .isotope-item {
+    width: 33.333%;
+  }
+  .masonry-gallery.grid-four-item .isotope-item {
+    width: 25%;
+  }
+  .masonry-gallery .isotope-item {
+    overflow: hidden;
+  }
+  .masonry-gallery .isotope-item .thumb {
+    position: relative;
+    overflow: hidden;
+  }
+  .masonry-gallery .isotope-item .thumb .photo {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: all 1200ms ease 0s;
+    -moz-transition: all 1200ms ease 0s;
+    -ms-transition: all 1200ms ease 0s;
+    -o-transition: all 1200ms ease 0s;
+    transition: all 1200ms ease 0s;
+  }
+  .ulockd-overlay-icon {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 50%;
+  }
+
+/*=========== МАКЕТ ПРОЕКТА ДВА ==========*/
+  .ulockd-overlay-icon,
+  .ulockd-overlay-icon-l2 {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 55%;
+  }
+  .ulockd-gallery-thumb .layer,
+  .ulockd-gallery-thumb-l2 .layer {
+    background-color: rgba(251, 72, 72, 0.9);
+    bottom: 0;
+    height: 96%;
+    left: 0;
+    margin: auto;
+    padding: 25% 10%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 96%;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -o-transform: scale(0);
+    -ms-transform: scale(0);
+    text-align: center;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+  .ulockd-gallery-thumb-l2 .layer::after {
+    border: 1px solid #fff;
+    bottom: 7%;
+    content: "";
+    height: 86%;
+    left: 7%;
+    position: absolute;
+    right: 7%;
+    top: 7%;
+    z-index: -1;
+  }
+  .ulockd-gallery-thumb-l2 {
+    margin: 3px;
+  }
+  .ulockd-gallery-thumb-l2 .layer > h3 {
+    color: #fff;
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .ulockd-gallery-thumb .layer > h5 {
+    color: #fff;
+  }
+  .ulockd-gallery-thumb-l2 .layer > p {
+    color: #fff;
+    font-size: 13px;
+  }
+  .ulockd-gallery-thumb .layer i,
+  .ulockd-gallery-thumb-l2 .layer i {
+    color: #ffffff;
+    font-size: 30px;
+    left: 0;
+    line-height: 45px;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    top: 45%;
+  }
+  .ulockd-gallery-thumb:hover .layer,
+  .ulockd-gallery-thumb-l2:hover .layer {
+    opacity: 1;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+  }
+  .ulockd-gallery-thumb:hover .thumb .photo,
+  .ulockd-gallery-thumb-l2:hover .thumb .photo {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+  }
+  .ulockd-overlay-icon a,
+  .ulockd-overlay-icon-l2 a {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    font-size: 18px;
+    line-height: 20px;
+    margin-right: 7px;
+    padding: 4px 12px;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+  .ulockd-overlay-icon a:hover{
+    background-color: #393939;
+  }
+  .ulockd-overlay-icon-l2 a:hover {
+    background-color: #393939;
+  }
+  .ulockd-overlay-icon span,
+  .ulockd-overlay-icon-l2 span {
+    color: #fff;
+    font-size: 16px;
+  }
+
+
+
+
+/*=========== РАЗДЕЛ БЛОГА ==========*/
+  .ulockd-blog{
+    background-image: url(../images/pattern/p3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 120px;
+    padding-top: 120px;
+  }
+  .ulockd-blog::before {
+    background-color: rgba(255, 255, 255, 0.95);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  .ulockd-blog-title {
+    position: relative;
+    padding-bottom: 70px;
+  }
+  .ulockd-blog-title h2 {
+    color: #111;
+    margin-top: 0;
+  }
+  .ulockd-blog-title .ulockd-blog-hdr-icon {
+    font-size: 80px;
+    left: 0;
+    margin: 0 auto;
+    opacity: 0.25;
+    position: absolute;
+    right: 0;
+    top: -45px;
+  }
+  .ulockd-blog-post-date {
+    font-family: "Montserrat",sans-serif;
+    font-weight: 400;
+  }
+  .ulockd-blog-post-comment {
+    font-family: "Montserrat",sans-serif;
+    font-weight: 400;
+    padding-bottom: 7px;
+  }
+  .ulockd-blog-post-date span {
+    font-family: "Montserrat",sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+  }
+  .ulockd-blog-post-title > h3 {
+    color: #232323;
+    font-family: "Montserrat",sans-serif;
+    font-weight: 400;
+    margin-top: 15px;
+  }
+  .ulockd-bp-btn {
+    font-family: "Montserrat",sans-serif;
+    padding-bottom: 3px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  .ulockd-bp-btn:hover {
+    color: #f95b5b;
+  }
+  .ulockd-l2-bp-btn {
+    /* МАКЕТ ВТОРОЙ */
+    border-bottom: 1px solid #7e7e7e;
+    color: #7d7d7d;
+    font-family: "Montserrat",sans-serif;
+    padding-bottom: 3px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  .ulockd-l2-bp-btn:hover {
+    border-bottom: 1px solid #fb4848;
+    color: #fb4848;
+  }
+
+
+/*=========== НИЖНИЙ КОЛОНТИТУЛ СЕКЦИИ ==========*/
+  .ulockd-footer {
+    background-color: #252525;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+  }
+  .ulockd-footer::before {
+    background: #2c2c2c none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 37%;
+  }
+  .ulockd-footer-logo {
+    margin-bottom: 20px;
+  }
+  .ulockd-footer-fst-col {
+    padding-right: 10px;
+  }
+  .ulockd-footer-fst-col > p{
+    color: #ddd;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    margin-bottom: 30px;
+  }
+  .ulockd-footer-font-icon > li{
+    padding-right: 0;
+  }
+  .ulockd-footer-font-icon a {
+    border: 1px solid;
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 3px 10px;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+  }
+  .ulockd-footer-font-icon a:hover {
+    background-color: #004DFF;
+  }
+  /* Контактные подвал виджет */
+  .ulockd-footer-contact h3,
+  .ulockd-footer-qlink h3,
+  .ulockd-footer-twitter h3,
+  .ulockd-footer-flickr h3 {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin-bottom: 27px;
+  }
+  .ulockd-footer-twitter h4 {
+    color: #fff;
+  }
+  .ulockd-footer-twitter p {
+    color: #ddd;
+  }
+  .ulockd-footer-contact > p {
+    color: #ddd;
+    margin-bottom: 20px;
+  }
+  .ulockd-ftr-phone, .ulockd-ftr-fax, .ulockd-ftr-mail {
+    color: #ddd;
+    font-size: 13px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+  }
+  .ulockd-ftr-phone > span,
+  .ulockd-ftr-fax > span,
+  .ulockd-ftr-mail > span,
+  .ulockd-ftr-phone > a,
+  .ulockd-ftr-fax > a,
+  .ulockd-ftr-mail > a  {
+    color: #ddd;
+  }
+  /* Календарь */
+  #calendar {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  /* Нижний Колонтитул Виджет Быстрой Ссылки */
+  .ulockd-footer-qlink .list-unstyled li a {
+    color: #ddd;
+    font-size: 13px;
+    line-height: 28px;
+  }
+  .ulockd-footer-qlink .list-unstyled li a:hover{
+    color: #fff;
+  }
+  /* Нижний Колонтитул Flickr Виджет */
+  .ulockd-flickr-widget > li {
+    margin-bottom: 6px;
+    margin-right: -5px;
+  }
+
+  /* Нижний Колонтитул Авторского Текста */
+  .ulockd-copy-right {
+    background-color: #004DFF;
+    color: #fff;
+    padding-bottom: 15px;
+    padding-top: 20px;
+    text-align: center;
+  }
+  .ulockd-copy-right p {
+    font-size: 12px;
+  }
+  /* Нижний колонтитул авторский макет два текста */
+  .ulockd-l2-copy-right {
+    background-color: #fb4848;
+    color: #fff;
+    padding-bottom: 15px;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  /* ВНУТРЕННИЕ СТРАНИЦЫ НАЧИНАЮТСЯ ЗДЕСЬ */
+  .ulockd-inner-home {
+    background-image: url(../images/background/inner-pagebg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    padding-top: 100px;
+    position: relative;
+  }  
+  .ulockd-inner-home::before {
+    background-color: rgba(42, 42, 42, 0.9);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+  }
+  .ulockd-icd-layer {
+    margin-top: 100px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    position: relative;
+  }  
+  .ulockd-icd-layer::before {
+    background-color: #004DFF;
+    content: "";
+    height: 100%;
+    left: -40%;
+    position: absolute;
+    right: -40%;
+    top: 0;
+    z-index: 0;
+  }
+  .ulockd-inner-conraimer-details h1,
+  .ulockd-icd-sub-menu > li a {
+    color: #fff;
+    position: relative;
+  }
+  /* СТИЛЬ ФОРМЫ ВСТРЕЧИ */
+  .appointment_form{
+    background-color: #f3f3f3;
+    padding: 15px 35px;
+  }
+  .appointment_form input{
+    border-radius: 0;
+    box-shadow: none;
+    height: 40px;
+  }
+  .ui-datepicker-header.ui-widget-header.ui-helper-clearfix.ui-corner-all, .ui-timepicker-list .ui-timepicker-selected:hover, .ui-timepicker-list li:hover, li.ui-timepicker-selected{
+    background-color: #fb4848;
+    color: #fff;
+  }
+  /* СТИЛЬ ФОРМЫ БРОНИРОВАНИЯ */
+  .booking_form{
+    background-color: #f3f3f3;
+    padding: 0 35px 5px;
+  }
+  .booking_select,
+  .booking_form input{
+    border-radius: 0;
+    box-shadow: none;
+    height: 45px;
+  }
+
+  /* СТРАНИЦА ОШИБКИ ИЛИ СТРАНИЦА 404 */
+  .ulockd-error {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 345px;
+    font-style: italic;
+    font-weight: 300;
+    letter-spacing: 5px;
+  }
+  .ulockd-error-paragraph {
+    color: #fff;
+    font-size: 36px;
+    line-height: 48px;
+  }
+  /* СТРАНИЦА КАРТЫ САЙТА */
+  .ulockd-site-map{
+    background-image: url(../images/pattern/p3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 120px;
+    padding-top: 120px;
+  }
+  .ulockd-site-map::before {
+    background-color: rgba(255, 255, 255, 0.95);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  .ulockd-sitemap > li {
+    font-size: 18px;
+    line-height: 30px;
+    padding: 5px;
+  }
+  .ulockd-sitemap > li a {
+    color: #313131;
+    text-transform: uppercase;
+  }
+  .ulockd-sitemap > li a:hover {
+    color: #004DFF ;
+  }
+
+  /* ФЛИП-ЧАСЫ */
+  .ulockd-flip-clock .clock{
+    padding-left: 50px;
+  }
+  .ulockd-flip-clock .clock .flip-clock-label{
+    color: #fff;
+    font-size: 18px;
+  }

@@ -1,0 +1,173 @@
+/* Дополнительные небольшие устройства (телефоны, меньше, чем 768px по) */
+/* Нет запроса на носитель, так как это значение по умолчанию в Bootstrap */
+
+/* Небольшие устройства (планшеты, 768px и выше) */
+/* Небольшие устройства (планшеты, 768px и выше) */
+/* Средние устройства (настольные компьютеры, 992px и выше) */
+/* Большие устройства (большие настольные компьютеры, 1200px и выше) */
+
+/* Дополнительные небольшие устройства (телефоны, меньше, чем 768px по) */
+/* Нет запроса на носитель, так как это значение по умолчанию в Bootstrap */
+
+@media only screen and (max-width:1366px){
+	.ulockd-overlay-icon-l2{top: 71%;}
+ }
+/*  (минимальная ширина:1200px)+++ */
+@media only screen and (min-width:1200px){
+	
+ }
+/* (минимальная ширина: 992px) (максимальная ширина:1199px) */
+@media only screen and (max-width:1199px){
+	.ulockd-blog-post-details {margin-bottom: 80px;}
+	.ulockd-welcm-ht::before{display: none;}
+	.ulockd-social-linked::before {display: none;}
+	.ulockd-welcm-ht{text-align: center;}
+	.ulockd-social-linked {float: none !important; margin-bottom: 10px; text-align: center;}
+	/* начало главная ответственный стиль*/
+	.ulockd-main-slider .caption{padding: 8%;}
+	/* главная ползунок конец */
+	/* начало главная ответственный стиль 2*/
+	.ulockd-main-slider-style2 .caption{padding: 8%;}
+	/* главная ползунок конец */
+	.ulockd-frst-divider-l2::after {right: -30%;}
+	.masonry-gallery.grid-four-item .isotope-item{width: 33.33%;}
+    .ulockd-about-ondetials{padding: 15px 20px;}
+    .ulockd-srv-cntnt-details{padding-left: 25%;}
+    .ulockd-team-mdetails{padding: 15px 18px;}
+    .ulockd-overlay-icon {top: 55%;}
+	.ulockd-overlay-icon-l2{top: 60%;}
+}
+/* (минимальная ширина:768px) (максимальная ширина:991px) */
+@media only screen and (max-width:991px){
+	.ulockd-fprjct-column{margin-bottom: 60px;}
+	.ulockd-team-member{margin-bottom: 50px;}
+	.ulockd-ffact{margin-bottom: 60px;}
+	.ulockd-testi-grid{margin-bottom: 100px;}
+	.ulockd-team-mdetails{bottom: -21%;}
+	.ulockd-partner-thumb{margin-bottom: 30px;}
+	.ulockd-fprjct-column-l2{margin-bottom: 50px;}
+	.ulockd-welcm-ht-two {text-align: center;}
+	.ulockd-social-linked-two{float: none !important;margin-bottom: 10px;text-align: center;}
+	/* начало главная ответственный стиль*/
+	.ulockd-main-slider .caption{padding: 5% 8%; }
+	.ulockd-main-slider .ulockd-text-two{font-size: 48px;line-height: 48px;}
+	.ulockd-main-slider .ulockd-text-three{margin-top: 10px;}
+	.ulockd-main-slider .caption{padding: 8%;}
+	/* главная ползунок конец */
+	/* начало главная ответственный стиль*/
+	.ulockd-main-slider-style2 .caption{padding: 5% 8%; }
+	.ulockd-main-slider-style2 .ulockd-text-two{font-size: 48px;line-height: 48px;}
+	.ulockd-main-slider-style2 .ulockd-text-three{margin-top: 10px;}
+	.ulockd-main-slider-style2 .caption{padding: 8%;}
+	/* главная ползунок конец */
+	/* Стиль навигации старт*/
+	.navbar-brand .logo {height: 37px;margin-top: 0px;}
+	nav.navbar.bootsnav.ulockd-menu-style-one .navbar-toggle{background-color: transparent;color: #fff;}
+	nav.navbar.navbar-default.bootsnav.ulockd-menu-style-one {background: #313131 none repeat scroll 0 0;}
+	nav.navbar.bootsnav .navbar-header.ulockd-ltwo .navbar-toggle{background-color: transparent;color: #fff;}
+	nav.navbar.navbar-default.bootsnav .navbar-header.ulockd-ltwo {background: #FB4848 none repeat scroll 0 0;}
+	nav.navbar.bootsnav ul.nav li.dropdown ul.dropdown-menu > li > a{color: #fff;font-family: 'Montserrat', sans-serif;}
+	.navbar.bootsnav .nav.navbar-nav .dropdown li{padding: 10px 15px;}
+	.navbar.bootsnav .nav.navbar-nav .dropdown li:hover a {color: #fff;padding-left: 15px;}
+	/* Стиль навигации конец*/
+	.ulockd-contact-info .ulockd-info {padding-right: 36%;}
+	.ulockd-about-ondetials{margin-bottom: 30px;}
+	.ulockd-testimonials{margin-top: 50px;}
+	.ulockd-about-thumb-ttl {left: -20%;}
+	.ulockd-frst-divider-l2::after {display: none;}
+    .masonry-gallery.grid-four-item .isotope-item{width: 50%;}
+    /* Скоро Будет Страница */
+    .ulockd-flip-clock .clock{padding-left: 0;}
+	.ulockd-overlay-icon{top: 45%;}
+
+}
+@media only screen and (max-width:800px){
+}
+/* (минимальная ширина:480px) (максимальная ширина:767px) */
+@media only screen and (max-width:767px){
+	/* Стиль Навигации*/
+	.navbar.bootsnav .dropdown li{padding: 10px 15px;}
+	.navbar.bootsnav .dropdown li:hover > a {padding-left: 15px;}
+	.navbar.bootsnav .dropdown li > a{color: #fff; -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -ms-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease;}
+	/* Навигации Окончания*/
+	.ulockd-contact-info {text-align: center;}
+	.ulockd-contact-info .ulockd-info{padding: 0;}
+	.ulockd-contact-info .ulockd-icon{display: table;float: none;margin: 0 auto;}
+	.ulockd-ohour-info{text-align: center;}
+	.ulockd-ohour-info .ulockd-icon{display: table;float: none;margin: 0 auto;}
+	.ulockd-welcm-hmddl{margin-bottom: 30px;margin-top: 20px;}
+	/* главный слайдер начало */
+	.ulockd-main-slider .ulockd-text-one{font-size: 30px;line-height: 30px;}
+	.ulockd-main-slider .ulockd-text-two{font-size: 32px;line-height: 32px;}
+	.ulockd-main-slider .owl-prev, .ulockd-main-slider .owl-next {display: none !important;}
+	.ulockd-main-slider .ulockd-text-three p{font-size: 14px;line-height: 16px;margin-top: 0;}
+	/* главный слайдер конец */
+	/* главный слайдер 2 начало */
+	.ulockd-main-slider-style2 .ulockd-text-one{font-size: 30px;line-height: 30px;}
+	.ulockd-main-slider-style2 .ulockd-text-two{font-size: 32px;line-height: 32px;}
+	.ulockd-main-slider-style2 .owl-prev, .ulockd-main-slider .owl-next {display: none !important;}
+	.ulockd-main-slider-style2 .ulockd-text-three p{font-size: 14px;line-height: 16px;margin-top: 0;}
+	/* главный слайдер конец */
+	.ulockd-srv-cntnt-details{padding-left: 15%;}
+	.ulockd-srvc-column .ulockd-srv-icon{left: 4%;}
+	.ulockd-team-mdetails {bottom: 0; padding: 20px; width: 100%;}
+	.ulockd-team-mdetails::before{ display: none;}
+	.ulockd-ap-srvc-column .ulockd-ap-srv-icon {left: 25px;}
+	.ulockd-ap-srv-cntnt-details{padding-left: 100px;}
+	.ulockd-welcm-hmddl{text-align: center;}
+	.ulockd-footer::before{width: 100%;}
+	.ulockd-about-thumb-ttl {left: 0%; position: relative; transform: rotate(0deg) !important;top: 0;}
+    .masonry-gallery.grid-four-item .isotope-item{width: 100%;}
+    .ulockd-error{font-size: 48px;}
+    .ulockd-csoon{font-size: 36px;}
+}
+@media only screen and (max-width:630px){
+	.ulockd-srv-cntnt-details{padding-left: 20%;}
+	/* Главный Слайдер начало*/
+	.ulockd-main-slider .caption{padding:2%;}
+	.ulockd-home-btn{display: none;}
+	/* Главный Слайдер конец*/
+	.ulockd-srv-cntnt-details{padding-left: 20%;}
+	/* Главный Слайдер 2 начало*/
+	.ulockd-main-slider-style2 .caption{padding:2%;}
+	/* Главный Слайдер конец*/
+
+}
+/* (min-width:361px) (max-width:479px) */
+@media only screen and (max-width:479px){
+	/* Главный Слайдер начало*/
+	.ulockd-main-slider .ulockd-text-three {margin-top: 0;}
+	.ulockd-main-slider .ulockd-text-two{font-size: 30px;line-height: 30px;}
+	.ulockd-home-btn{display: none;}
+	/* Главный Слайдер конец*/
+	/* Главный Слайдер начало*/
+	.ulockd-main-slider-style2 .ulockd-text-three {margin-top: 0;}
+	.ulockd-main-slider-style2 .ulockd-text-two{font-size: 30px;line-height: 30px;}
+	/* Главный Слайдер конец*/
+	.ulockd-srv-cntnt-details{padding-left: 25%;}
+	
+}
+@media only screen and (max-width:400px){
+	/* Главный Слайдер начало*/
+	.ulockd-main-slider .caption{padding: 4%;}
+	.ulockd-main-slider .ulockd-text-one{font-size: 24px;}
+	.ulockd-main-slider .ulockd-text-two{font-size: 24px;}
+	.ulockd-main-slider .ulockd-text-three p{display: none;}
+	/* Главный Слайдер конец*/
+	/* Главный Слайдер начало*/
+	.ulockd-main-slider-style2 .caption{padding: 4%;}
+	.ulockd-main-slider-style2 .ulockd-text-one{font-size: 24px;}
+	.ulockd-main-slider-style2 .ulockd-text-two{font-size: 24px;}
+	.ulockd-main-slider-style2 .ulockd-text-three p{display: none;}
+	/* Главный Слайдер конец*/
+}
+/* (min-width:321px) (max-width:360px) */
+@media only screen and (max-width:360px){
+	.ulockd-dvidr-btn-l2 a {margin-top: 30px;}
+
+}
+@media only screen and (max-width:320px){
+	.ulockd-srv-cntnt-details{padding-left:30%;}
+	.ulockd-overlay-icon-l2{top: 76%;}
+
+}
